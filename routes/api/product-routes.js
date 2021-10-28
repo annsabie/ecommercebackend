@@ -11,10 +11,6 @@ router.get('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
-  // find all products
-  // be sure to include its associated Category and Tag data
-
-
 
 router.get('/:id', async (req, res) => {
   try {
@@ -32,9 +28,6 @@ router.get('/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
-  // find a single product by its `id`
-  // be sure to include its associated Category and Tag data
-
 
 router.post('/', async (req, res) => {
   const productData = await Product.create(
