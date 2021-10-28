@@ -1,5 +1,7 @@
 const router = require('express').Router();
 const { Tag, Product, ProductTag } = require("../../models");
+const async = require('asyncawait/async');
+const await = require('asyncawait/await');
 
 
 router.get('/', async (req, res) => {
